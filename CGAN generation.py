@@ -12,8 +12,6 @@ for images in os.listdir(source_path):
         if os.path.exists(path_os+'/box'):
             shutil.rmtree(path_os+'/box')
         if os.path.exists(path_os + '/CGAN CEDAR forg/generated_' + images[:-4] + '_1.png'):
-            cnt += 1
-            print(cnt, end=' ')
             continue
         os.mkdir(path_os+'/box') #temporary input folder for cgan
         os.mkdir(path_os+'/box/img')
