@@ -13,13 +13,8 @@ from PIL import Image
 import os,shutil
 import cv2,copy
 from skimage.metrics import structural_similarity as ssim
+from preprocessing_image import *
 
-def preprocess_img(img):
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    img = img.astype("uint8")
-    _, img = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-    tp = cv2.resize(img, (224, 224,), interpolation=cv2.INTER_CUBIC)
-    return tp
 
 def ssim_cal(img_path,ref_img):
     img=cv2.imread(img_path)
