@@ -11,7 +11,7 @@ for images in os.listdir(source_path):
         img_path = source_path+'/'+images
         if os.path.exists(path_os+'/box'):
             shutil.rmtree(path_os+'/box')
-        if os.path.exists(path_os + '/CGAN CEDAR real/generated_' + images[:-4] + '_1.png'):
+        if os.path.exists(path_os + '/CGAN CEDAR forg/generated_' + images[:-4] + '_1.png'):
             cnt += 1
             print(cnt, end=' ')
             continue
