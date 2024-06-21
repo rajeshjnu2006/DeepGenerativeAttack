@@ -24,4 +24,4 @@ for images in os.listdir(source_path):
         generateimg(images)
         cnt+=1
         print(cnt,end=' ')
-        shutil.rmtree(path_os+'/box2')
+        shutil.rmtree(path_os+'/box')
