@@ -13,15 +13,10 @@ for images in os.listdir(source_path):
         if os.path.exists(path_os+'/box'):
             shutil.rmtree(path_os+'/box')
         if os.path.exists(path_os + '/CGAN CEDAR forg/generated_' + images[:-4] + '_1.png'):
-            cnt+=1
-            print(cnt,end=' ')
             continue
         os.mkdir(path_os+'/box')
         os.mkdir(path_os+'/box/img')
         box_path=path_os+'/box/img'
         shutil.copy(img_path,box_path)
-        kt=1
         generateimg(images)
-        cnt+=1
-        print(cnt,end=' ')
         shutil.rmtree(path_os+'/box')
