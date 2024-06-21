@@ -8,4 +8,6 @@ As discussed in the paper, we used CGAN and VAE to generate synthetic signatures
 
 To run generation with, run file CGAN generation. The same with VAE generation. For controlled SSIM generation with VAE as discussed in the paper, see the VAE SSI file. 
 
+The datasets are preprocessed using OTSU binarializing as put in file preprocessing_image.py. 
+
 
