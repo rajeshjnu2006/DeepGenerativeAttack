@@ -4,7 +4,7 @@ from cgan import *
 cnt=1
 temp=0
 path_os = os.getcwd()
-source_path=path_os+"/full_org/"
+source_path=path_os+"/full_forg/"
 for images in os.listdir(source_path):
         if images[0]!='f': #check only for forg images
             continue
