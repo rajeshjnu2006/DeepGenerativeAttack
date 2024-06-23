@@ -14,6 +14,10 @@ The datasets are preprocessed using OTSU binarializing as put in file utils.py.
 
 To preprocess the data, run the file preprocessing_data.py. The folders used in the codes are downloaded from *[link](https://drive.google.com/drive/folders/1KbbJ5pCx9CVjlFgt28j4bY9KaFcELHb_)*. The generated data folders got 9 generated images for each forgery signatures from CEDAR. After running the files, the user should get 3 numpy files containing the processed real, forg and generated data as well as the average SSIM score for the generated data. 
 
-Follow the instructions from the file DenseNet201_single.ipynb for running the baseline model and test it with the generated attack. For the testing with retrained, see the demo in DenseNet201_cgan_retrain_cgan file.ipynb. Similar preprocessing, training/testing protocols are made with other datasets, generated datasets and model architectures. 
+Follow the instructions from the file DenseNet201_single.ipynb to run the baseline model DenseNet201 and test it with the generated attack. For the testing with retrained, see the demo in DenseNet201_cgan_retrain_cgan file.ipynb. Similar preprocessing, training/testing protocols are done with other datasets, generated datasets and model architectures. 
+
+# Synthetic data from BHSIG260 and CEDAR datasets links:
+
+The synthetic data included in the paper are located in *[link](https://drive.google.com/drive/folders/1KbbJ5pCx9CVjlFgt28j4bY9KaFcELHb_)*. 
 
 
