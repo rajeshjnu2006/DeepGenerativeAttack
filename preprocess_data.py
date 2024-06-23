@@ -28,7 +28,7 @@ with open(path_os + '/CEDAR_forg.npy', 'wb') as f:
     np.save(f, full_forg, )
 with open(path_os + '/CEDAR_real.npy', 'wb') as f:
     np.save(f, full_real, )
-with open(path_os + '/cgan_CEDAR_forgl.npy', 'wb') as f:
+with open(path_os + '/cgan_CEDAR_forg.npy', 'wb') as f:
     np.save(f, full_real, )
 print("Average SSIM score: "+str(ssim/(55*24*9))) #print the average SSIM score
 
