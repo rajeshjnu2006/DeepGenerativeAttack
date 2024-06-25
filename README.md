@@ -1,6 +1,6 @@
 # DeepGenerativeAttack
 
-This is the code for ICJB 2024 paper Deep Generative Attacks and Countermeasures for Data-Driven Writer-Dependent Static Signature Verification. 
+This is the code for IJCB 2024 paper Deep Generative Attacks and Countermeasures for Data-Driven Writer-Dependent Static Signature Verification. 
 
 # Generation process
 
