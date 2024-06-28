@@ -2,6 +2,10 @@
 
 This is the code for IJCB 2024 paper Deep Generative Attacks and Countermeasures for Data-Driven Writer-Dependent Static Signature Verification. 
 
+# Environment requirements.
+
+Please run pip install -r setup.py to install the environment requirements to run this code. 
+
 # Generation process
 
 As discussed in the paper, we used CGAN and VAE to generate synthetic signatures. The codes included in this repository is made for the CEDAR dataset from https://cedar.buffalo.edu/handwriting/HRdatabase.html. Make sure to check the required paths for the files. 
@@ -12,7 +16,7 @@ The datasets are preprocessed using OTSU binarializing as put in file utils.py.
 
 # Preprocessing and training/testing data
 
-To preprocess the data, run the file preprocessing_data.py. The folders used in the codes are downloaded from *[link](https://drive.google.com/drive/folders/1KbbJ5pCx9CVjlFgt28j4bY9KaFcELHb_)*. The generated data folders got 9 generated images for each forgery signatures from CEDAR. After running the files, the user should get 3 numpy files containing the processed real, forg and generated data as well as the average SSIM score for the generated data. 
+To preprocess the data, run the file preprocessing_data.py. The folders used in the codes are downloaded from *[link](https://www.kaggle.com/datasets/shreelakshmigp/cedardataset)* for the original dataset and *[link](https://drive.google.com/drive/folders/1KbbJ5pCx9CVjlFgt28j4bY9KaFcELHb_)* for the synthetic dataset. The generated data folders got 9 generated images for each forgery signatures from CEDAR. After running the files, the user should get 3 numpy files containing the processed real, forg and generated data as well as the average SSIM score for the generated data. 
 
 Follow the instructions from the file DenseNet201_single.ipynb to run the baseline model DenseNet201 and test it with the generated attack. For the testing with retrained, see the demo in DenseNet201_cgan_retrain_cgan file.ipynb. Similar preprocessing, training/testing protocols are done with other datasets, generated datasets and model architectures. 
 
