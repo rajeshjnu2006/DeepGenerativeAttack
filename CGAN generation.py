@@ -17,7 +17,7 @@ for images in os.listdir(source_path):
         os.mkdir(path_os+'/box/img')
         box_path=path_os+'/box/img'
         shutil.copy(img_path,box_path)
-        shutil.copy2(box_path+'/'+images, box_path+'/'+str(ip)+'_'+images)#since CGAN does not take only 1 image as input, copy it to make 2 similar images
+        shutil.copy2(box_path+'/'+images, box_path+'/1_'+images)#since CGAN does not take only 1 image as input, copy it to make 2 similar images
         kt=1
         generateimg(images)
         shutil.rmtree(path_os+'/box')
