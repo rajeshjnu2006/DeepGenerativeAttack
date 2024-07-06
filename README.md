@@ -1,4 +1,4 @@
-# DeepGenerativeAttack
+# Deep Generative Attack on Offline Signature verification
 
 This is the code for IJCB 2024 paper Deep Generative Attacks and Countermeasures for Data-Driven Writer-Dependent Static Signature Verification. 
 
