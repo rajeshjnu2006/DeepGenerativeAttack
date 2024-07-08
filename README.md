@@ -2,13 +2,13 @@
 
 ## Paper Overview
 
-This is the code for IJCB 2024 paper Deep Generative Attacks and Countermeasures for Data-Driven Writer-Dependent Static Signature Verification.
+This is the code for the IJCB 2024 paper titled "Deep Generative Attacks and Countermeasures for \\ Data-Driven Offline Signature Verification"
 
 ### Research Purpose
 
 This study explores the use of modern Deep Generative Models (DGMs) for both challenging ASV systems and crafting effective countermeasures. Our research focuses on:
 
-1. Creation of synthetic datasets using VAE and CGAN, derived from CEDAR, BHSig260-B, and BHSig260-H collections.
+1. Synthetic datasets were created using VAE and CGAN, derived from the CEDAR, BHSig260-B, and BHSig260-H collections.
 2. Evaluation of the resilience of state-of-the-art DASV models, including DenseNet201, ResNet152V2, and Xception architectures, against various attack scenarios.
 3. Development of a novel countermeasure: retraining DASV models with SSIM-optimized synthetic forgeries.
 
